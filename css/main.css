@@ -392,7 +392,7 @@ footer ul li{
 .navbar-collapse{ padding-left:0;}
  
  
-.navbar-default{ border:none; background:#ff6c00; padding-bottom:0 !important; margin-bottom:0 !important;}
+.navbar-default{ border:none; background:#E93393; padding-bottom:0 !important; margin-bottom:0 !important;}
 
 .navbar-default .navbar-nav > li > a{ color: #FFFFFF;transition: all .5s linear 0s; font-size:18px;
 margin-top:10px; margin-bottom:10px;
