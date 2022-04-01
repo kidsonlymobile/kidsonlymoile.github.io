@@ -358,7 +358,7 @@
                         <div class="col-md-6">
                             <p>
                                 <br />
-                                © Copyright  WheresMyMedia2016.All Rights Reserved.
+                                © Copyright  WheresMyMedia 2022. All Rights Reserved.
                             </p>
                         </div>
                         <!--end col-md-6-->
@@ -369,77 +369,7 @@
             </footer>
             <!--end footer-->
 
-            <script type="text/javascript">
-                var twidth = 0;
-                var tratio = 15;
-                var jwp = jwplayer("myElement");
-                jwp.setup({
-                    file: "wmm_website_footage.mp4",
-                    width: "100%",
-                    aspectratio: "16:9",
-                    autostart: true,
-                    controls: false,
-                    repeat: true
-                });
-                jwp.onResize(function () {
-                    if ($("#divelement").length) {
-                        pwidth = jwp.getWidth();
-                        if (twidth > 0 && twidth != pwidth) {
-                            twidth = pwidth;
-                            fsize = twidth / tratio;
-                            var ediv = $("#divelement");
-                            ediv.css({ 'font-size': fsize })
-                        }
-                    }
-                });
-                jwp.onPlay(function () {
-                    twidth = jwp.getWidth();
-                    var fsize = twidth / tratio;
-                    if (jwp.getRenderingMode() == "html5") {
-                        var theBody = document.getElementById(myElement.id);
-                    } else {
-                        var theBody = document.getElementById(myElement.id + "_wrapper");
-                    }
-                    if (!$("#divelement").length) {
-                        var divtype = document.createElement("div");
-                        divtype.id = "divelement";
-                        divtype.style = "position:absolute;width:99%;height:100px;margin:auto;text;font-size:" + fsize + "px;color:#ffa600;top:0; left:0; bottom:0; right:0;";
-                        divtype.innerHTML = '<center><span class="element"></span></center>';
-                        theBody.appendChild(divtype);
-                        $(".element").typed({
-                            strings: ["Where's My Media?", "It's Here!", "Your Media", "Your Way", "Edit Online", "Truly Mobile", ""],
-                            typeSpeed: 120,
-                            loop: true,
-                            backSpeed: 50,
-                            backDelay: 500,
-                            callback: function () {
-                                shift();
-                            }
-                        });
-                    }
-                });
-                function shift() {
-                    $(".head-wrap").addClass("shift-text");
-                    terminalHeight();
-                }
-
-                function terminalHeight() {
-                    var termHeight = $(".terminal-height");
-                    var value = termHeight.text();
-                    value = parseInt(value);
-                    setTimeout(function () {
-                        if (value > 10) {
-                            value = value - 1;
-                            this.txtValue = value.toString();
-                            termHeight.text(this.txtValue);
-                            self.terminalHeight();
-                        }
-                        else {
-                            clearTimeout();
-                        }
-                    }, 10);
-                }
-            </script>
+         
 
 </body>
 </html>
