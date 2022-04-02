@@ -178,7 +178,7 @@ a{
 	padding-top:35px;
 }
 .icon_bg_1{
-	background:#7ca760;
+	background:#772bd4;
 	width:200px; height:200px;
 	margin:0 auto;
 	border-radius:50%;
@@ -189,13 +189,13 @@ a{
 	transition: all .5s linear 0s;
 }
 .icon_bg_1:hover{
-	background:#f36523;
+	background:#EA3393;
 	transition-duration:.5s; 
 	cursor:pointer;
 	transform:scale(1.1);
 }
 .icon_bg_2{
-	background:#f36523;
+	background:#EA3393;
 	width:200px; height:200px;
 	margin:0 auto;
 	border-radius:50%;
@@ -206,17 +206,17 @@ a{
 	transition: all .5s linear 0s;
 }
 .icon_bg_2:hover{
-	background:#7ca760;
+	background:#772bd4;
 	transition-duration:.5s; 
 	cursor:pointer;
 	transform:scale(1.1);
 }
 
 .article_h{
-	text-align:center; font-weight:bold; color:#7ca760;
+	text-align:center; font-weight:bold; color:#772bd4;
 }
 .article_hb{
-	text-align:center; font-weight:bold; color:#f36523;
+	text-align:center; font-weight:bold; color:#EA3393;
 }
 .gray{
 	color:#999;
